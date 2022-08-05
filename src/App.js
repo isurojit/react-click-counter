@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Card from './UI/Card';
 
 const App = () => {
   const [clickCounter, setClickCounter] = useState(0);
@@ -15,11 +16,11 @@ const App = () => {
     }
   }
   return (
-    <div>
+    <Card>
       <button onClick={clickCounterHandler}>+</button>
       <h1>{clickCounter}</h1>
       <button onClick={clickCounterHandler}>-</button>
-    </div>
+    </Card>
   )
 }
 
