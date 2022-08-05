@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import Card from './UI/Card';
 
+import classes from './App.module.css';
+
 const App = () => {
   const [clickCounter, setClickCounter] = useState(0);
   
